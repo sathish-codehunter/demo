@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xd%++#$$*b3r0#*riw*+&-b0rkodxajamf9q(ad*fk*p(dq+32
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'demo1.wsgi.application'
+WSGI_APPLICATION = 'demo1.wsgi.app'
 
 
 # Database
